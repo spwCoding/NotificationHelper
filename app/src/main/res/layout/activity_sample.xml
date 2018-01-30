@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="notification.spw.com.notificationhelper.SampleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/default_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="默认通知" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/backstack_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="带有返回堆栈的通知" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/full_screen_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浮窗通知"
+           />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/progress_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进度条通知"
+            />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/remoteviews_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="remoteview通知"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

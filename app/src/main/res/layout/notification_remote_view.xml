@@ -6,13 +6,16 @@
 
     <TextView
         android:id="@+id/remote_text_view"
+        android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <ImageView
         android:id="@+id/remote_image_view"
         android:layout_marginTop="15dp"
+        android:visibility="visible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
 
 </LinearLayout>

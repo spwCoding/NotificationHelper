@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/start_travel"
-        android:text="start travel"
+        android:text="开始测试"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

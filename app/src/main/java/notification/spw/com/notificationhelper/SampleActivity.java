@@ -16,8 +16,6 @@ public class SampleActivity extends AppCompatActivity {
 
     public static final String TAG = "SampleActivity";
 
-    private int updateValue=0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -155,11 +153,9 @@ public class SampleActivity extends AppCompatActivity {
      * 默认自定义通知样式remoteview
      */
     private void showRemoteViewNotificaion() {
-
         RemoteViews mRemoteViews=new RemoteViews(this.getPackageName(), R.layout.notification_remote_view);
         mRemoteViews.setTextViewText(R.id.remote_text_view, "通知内容");
         mRemoteViews.setImageViewResource(R.id.remote_image_view,R.mipmap.ic_launcher_round);
-
         //2.构建一个打开Activity的PendingIntent
         Intent intent=new Intent(SampleActivity.this,SampleActivity.class);
         PendingIntent mPendingIntent=PendingIntent.getActivity(SampleActivity.this, 102, intent, PendingIntent.FLAG_UPDATE_CURRENT);
